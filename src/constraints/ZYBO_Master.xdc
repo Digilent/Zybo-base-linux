@@ -408,5 +408,5 @@ set_property IOSTANDARD LVCMOS33 [get_ports {Vp_Vn_v_n}]
 #set_property PACKAGE_PIN R19 [get_ports vga_vs]
 #set_property IOSTANDARD LVCMOS33 [get_ports vga_vs]
 
-set_false_path -from [get_clocks clk_out1_linux_bd_clk_wiz_0_0] -to [get_clocks clk_fpga_0]
-set_false_path -from [get_clocks clk_fpga_0] -to [get_clocks clk_out1_linux_bd_clk_wiz_0_0]
+set_false_path -from [get_clocks clk_out1_system_clk_wiz_0_0] -to [get_clocks clk_fpga_0]
+set_false_path -from [get_clocks clk_fpga_0] -to [get_clocks clk_out1_system_clk_wiz_0_0]
