@@ -1,10 +1,10 @@
 // Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
-// Tool Version: Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
-// Date        : Sun Jan 28 23:30:43 2018
-// Host        : DESKTOP-LB2I44G running 64-bit major release  (build 9200)
+// Tool Version: Vivado v.2017.4 (lin64) Build 2086221 Fri Dec 15 20:54:30 MST 2017
+// Date        : Fri Mar 23 16:59:25 2018
+// Host        : ubuntu running 64-bit Ubuntu 16.04.3 LTS
 // Command     : write_verilog -force -mode funcsim
-//               C:/work/git/Zybo-base-linux/src/bd/system/ip/system_util_ds_buf_0_0/system_util_ds_buf_0_0_sim_netlist.v
+//               /home/digilent/work/git/Zybo-base-linux/src/bd/system/ip/system_util_ds_buf_0_0/system_util_ds_buf_0_0_sim_netlist.v
 // Design      : system_util_ds_buf_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -12,13 +12,13 @@
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CHECK_LICENSE_TYPE = "system_util_ds_buf_0_0,util_ds_buf,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* x_core_info = "util_ds_buf,Vivado 2017.2" *) 
+(* CHECK_LICENSE_TYPE = "system_util_ds_buf_0_0,util_ds_buf,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* x_core_info = "util_ds_buf,Vivado 2017.4" *) 
 (* NotValidForBitStream *)
 module system_util_ds_buf_0_0
    (BUFG_I,
     BUFG_O);
-  (* x_interface_info = "xilinx.com:signal:clock:1.0 BUFG_I CLK" *) input [0:0]BUFG_I;
-  (* x_interface_info = "xilinx.com:signal:clock:1.0 BUFG_O CLK" *) output [0:0]BUFG_O;
+  (* x_interface_info = "xilinx.com:signal:clock:1.0 BUFG_I CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME BUFG_I, FREQ_HZ 125000000, PHASE 0.000, CLK_DOMAIN system_sysclk" *) input [0:0]BUFG_I;
+  (* x_interface_info = "xilinx.com:signal:clock:1.0 BUFG_O CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME BUFG_O, FREQ_HZ 125000000, PHASE 0.000, CLK_DOMAIN system_sysclk" *) output [0:0]BUFG_O;
 
   wire [0:0]BUFG_I;
   wire [0:0]BUFG_O;

@@ -1,10 +1,10 @@
 // Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
-// Tool Version: Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
-// Date        : Sun Jan 28 23:31:25 2018
-// Host        : DESKTOP-LB2I44G running 64-bit major release  (build 9200)
+// Tool Version: Vivado v.2017.4 (lin64) Build 2086221 Fri Dec 15 20:54:30 MST 2017
+// Date        : Fri Mar 23 17:08:08 2018
+// Host        : ubuntu running 64-bit Ubuntu 16.04.3 LTS
 // Command     : write_verilog -force -mode synth_stub
-//               C:/work/git/Zybo-base-linux/src/bd/system/ip/system_v_tc_out_0/system_v_tc_out_0_stub.v
+//               /home/digilent/work/git/Zybo-base-linux/src/bd/system/ip/system_v_tc_out_0/system_v_tc_out_0_stub.v
 // Design      : system_v_tc_out_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7z010clg400-1
@@ -13,7 +13,7 @@
 // This empty module with port declaration file causes synthesis tools to infer a black box for IP.
 // The synthesis directives are for Synopsys Synplify support to prevent IO buffer insertion.
 // Please paste the declaration into a Verilog source file or add the file as an additional source.
-(* x_core_info = "v_tc,Vivado 2017.2" *)
+(* x_core_info = "v_tc,Vivado 2017.4" *)
 module system_v_tc_out_0(clk, clken, s_axi_aclk, s_axi_aclken, gen_clken, 
   hsync_out, hblank_out, vsync_out, vblank_out, active_video_out, resetn, s_axi_aresetn, 
   s_axi_awaddr, s_axi_awvalid, s_axi_awready, s_axi_wdata, s_axi_wstrb, s_axi_wvalid, 

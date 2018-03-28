@@ -39,7 +39,7 @@
 -- ** expressly prohibited.                                               **
 -- **                                                                     **
 -- ** Any modifications that are made to the Source Code are              **
--- ** done at the user’s sole risk and will be unsupported.               **
+-- ** done at the userÂ’s sole risk and will be unsupported.               **
 -- ** The Xilinx Support Hotline does not have access to source           **
 -- ** code and therefore cannot answer specific questions related         **
 -- ** to source HDL. The Xilinx Hotline support of original source        **

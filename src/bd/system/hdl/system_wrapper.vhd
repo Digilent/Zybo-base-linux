@@ -1,8 +1,8 @@
 --Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
---Tool Version: Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
---Date        : Sun Jan 28 23:25:09 2018
---Host        : DESKTOP-LB2I44G running 64-bit major release  (build 9200)
+--Tool Version: Vivado v.2017.4 (lin64) Build 2086221 Fri Dec 15 20:54:30 MST 2017
+--Date        : Fri Mar 23 16:46:41 2018
+--Host        : ubuntu running 64-bit Ubuntu 16.04.3 LTS
 --Command     : generate_target system_wrapper.bd
 --Design      : system_wrapper
 --Purpose     : IP block netlist
@@ -34,7 +34,12 @@ entity system_wrapper is
     FIXED_IO_ps_clk : inout STD_LOGIC;
     FIXED_IO_ps_porb : inout STD_LOGIC;
     FIXED_IO_ps_srstb : inout STD_LOGIC;
+    HDMI_DDC_scl_io : inout STD_LOGIC;
+    HDMI_DDC_sda_io : inout STD_LOGIC;
+    HDMI_HPD_tri_i : in STD_LOGIC_VECTOR ( 0 to 0 );
     HDMI_OEN : out STD_LOGIC_VECTOR ( 0 to 0 );
+    IIC_0_scl_io : inout STD_LOGIC;
+    IIC_0_sda_io : inout STD_LOGIC;
     TMDS_clk_n : out STD_LOGIC;
     TMDS_clk_p : out STD_LOGIC;
     TMDS_data_n : out STD_LOGIC_VECTOR ( 2 downto 0 );
@@ -57,11 +62,6 @@ entity system_wrapper is
     ac_recdat : in STD_LOGIC_VECTOR ( 0 to 0 );
     ac_reclrc : out STD_LOGIC_VECTOR ( 0 to 0 );
     btns_4bits_tri_i : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    hdmi_ddc_scl_io : inout STD_LOGIC;
-    hdmi_ddc_sda_io : inout STD_LOGIC;
-    hdmi_hpd_tri_i : in STD_LOGIC_VECTOR ( 0 to 0 );
-    iic_0_scl_io : inout STD_LOGIC;
-    iic_0_sda_io : inout STD_LOGIC;
     leds_4bits_tri_io : inout STD_LOGIC_VECTOR ( 3 downto 0 );
     sws_4bits_tri_i : in STD_LOGIC_VECTOR ( 3 downto 0 );
     sysclk : in STD_LOGIC_VECTOR ( 0 to 0 )
@@ -127,12 +127,12 @@ architecture STRUCTURE of system_wrapper is
     sysclk : in STD_LOGIC_VECTOR ( 0 to 0 );
     ac_recdat : in STD_LOGIC_VECTOR ( 0 to 0 );
     ac_bclk : out STD_LOGIC_VECTOR ( 0 to 0 );
-    ac_pblrc : out STD_LOGIC_VECTOR ( 0 to 0 );
     ac_reclrc : out STD_LOGIC_VECTOR ( 0 to 0 );
+    ac_pblrc : out STD_LOGIC_VECTOR ( 0 to 0 );
     ac_pbdat : out STD_LOGIC_VECTOR ( 0 to 0 );
     ac_mclk : out STD_LOGIC;
-    HDMI_OEN : out STD_LOGIC_VECTOR ( 0 to 0 );
-    ac_muten : out STD_LOGIC_VECTOR ( 0 to 0 )
+    ac_muten : out STD_LOGIC_VECTOR ( 0 to 0 );
+    HDMI_OEN : out STD_LOGIC_VECTOR ( 0 to 0 )
   );
   end component system;
   component IOBUF is
@@ -143,18 +143,18 @@ architecture STRUCTURE of system_wrapper is
     IO : inout STD_LOGIC
   );
   end component IOBUF;
-  signal hdmi_ddc_scl_i : STD_LOGIC;
-  signal hdmi_ddc_scl_o : STD_LOGIC;
-  signal hdmi_ddc_scl_t : STD_LOGIC;
-  signal hdmi_ddc_sda_i : STD_LOGIC;
-  signal hdmi_ddc_sda_o : STD_LOGIC;
-  signal hdmi_ddc_sda_t : STD_LOGIC;
-  signal iic_0_scl_i : STD_LOGIC;
-  signal iic_0_scl_o : STD_LOGIC;
-  signal iic_0_scl_t : STD_LOGIC;
-  signal iic_0_sda_i : STD_LOGIC;
-  signal iic_0_sda_o : STD_LOGIC;
-  signal iic_0_sda_t : STD_LOGIC;
+  signal HDMI_DDC_scl_i : STD_LOGIC;
+  signal HDMI_DDC_scl_o : STD_LOGIC;
+  signal HDMI_DDC_scl_t : STD_LOGIC;
+  signal HDMI_DDC_sda_i : STD_LOGIC;
+  signal HDMI_DDC_sda_o : STD_LOGIC;
+  signal HDMI_DDC_sda_t : STD_LOGIC;
+  signal IIC_0_scl_i : STD_LOGIC;
+  signal IIC_0_scl_o : STD_LOGIC;
+  signal IIC_0_scl_t : STD_LOGIC;
+  signal IIC_0_sda_i : STD_LOGIC;
+  signal IIC_0_sda_o : STD_LOGIC;
+  signal IIC_0_sda_t : STD_LOGIC;
   signal leds_4bits_tri_i_0 : STD_LOGIC_VECTOR ( 0 to 0 );
   signal leds_4bits_tri_i_1 : STD_LOGIC_VECTOR ( 1 to 1 );
   signal leds_4bits_tri_i_2 : STD_LOGIC_VECTOR ( 2 to 2 );
@@ -172,33 +172,33 @@ architecture STRUCTURE of system_wrapper is
   signal leds_4bits_tri_t_2 : STD_LOGIC_VECTOR ( 2 to 2 );
   signal leds_4bits_tri_t_3 : STD_LOGIC_VECTOR ( 3 to 3 );
 begin
-hdmi_ddc_scl_iobuf: component IOBUF
+HDMI_DDC_scl_iobuf: component IOBUF
      port map (
-      I => hdmi_ddc_scl_o,
-      IO => hdmi_ddc_scl_io,
-      O => hdmi_ddc_scl_i,
-      T => hdmi_ddc_scl_t
+      I => HDMI_DDC_scl_o,
+      IO => HDMI_DDC_scl_io,
+      O => HDMI_DDC_scl_i,
+      T => HDMI_DDC_scl_t
     );
-hdmi_ddc_sda_iobuf: component IOBUF
+HDMI_DDC_sda_iobuf: component IOBUF
      port map (
-      I => hdmi_ddc_sda_o,
-      IO => hdmi_ddc_sda_io,
-      O => hdmi_ddc_sda_i,
-      T => hdmi_ddc_sda_t
+      I => HDMI_DDC_sda_o,
+      IO => HDMI_DDC_sda_io,
+      O => HDMI_DDC_sda_i,
+      T => HDMI_DDC_sda_t
     );
-iic_0_scl_iobuf: component IOBUF
+IIC_0_scl_iobuf: component IOBUF
      port map (
-      I => iic_0_scl_o,
-      IO => iic_0_scl_io,
-      O => iic_0_scl_i,
-      T => iic_0_scl_t
+      I => IIC_0_scl_o,
+      IO => IIC_0_scl_io,
+      O => IIC_0_scl_i,
+      T => IIC_0_scl_t
     );
-iic_0_sda_iobuf: component IOBUF
+IIC_0_sda_iobuf: component IOBUF
      port map (
-      I => iic_0_sda_o,
-      IO => iic_0_sda_io,
-      O => iic_0_sda_i,
-      T => iic_0_sda_t
+      I => IIC_0_sda_o,
+      IO => IIC_0_sda_io,
+      O => IIC_0_sda_i,
+      T => IIC_0_sda_t
     );
 leds_4bits_tri_iobuf_0: component IOBUF
      port map (
@@ -251,20 +251,20 @@ system_i: component system
       FIXED_IO_ps_clk => FIXED_IO_ps_clk,
       FIXED_IO_ps_porb => FIXED_IO_ps_porb,
       FIXED_IO_ps_srstb => FIXED_IO_ps_srstb,
-      HDMI_DDC_scl_i => hdmi_ddc_scl_i,
-      HDMI_DDC_scl_o => hdmi_ddc_scl_o,
-      HDMI_DDC_scl_t => hdmi_ddc_scl_t,
-      HDMI_DDC_sda_i => hdmi_ddc_sda_i,
-      HDMI_DDC_sda_o => hdmi_ddc_sda_o,
-      HDMI_DDC_sda_t => hdmi_ddc_sda_t,
-      HDMI_HPD_tri_i(0) => hdmi_hpd_tri_i(0),
+      HDMI_DDC_scl_i => HDMI_DDC_scl_i,
+      HDMI_DDC_scl_o => HDMI_DDC_scl_o,
+      HDMI_DDC_scl_t => HDMI_DDC_scl_t,
+      HDMI_DDC_sda_i => HDMI_DDC_sda_i,
+      HDMI_DDC_sda_o => HDMI_DDC_sda_o,
+      HDMI_DDC_sda_t => HDMI_DDC_sda_t,
+      HDMI_HPD_tri_i(0) => HDMI_HPD_tri_i(0),
       HDMI_OEN(0) => HDMI_OEN(0),
-      IIC_0_scl_i => iic_0_scl_i,
-      IIC_0_scl_o => iic_0_scl_o,
-      IIC_0_scl_t => iic_0_scl_t,
-      IIC_0_sda_i => iic_0_sda_i,
-      IIC_0_sda_o => iic_0_sda_o,
-      IIC_0_sda_t => iic_0_sda_t,
+      IIC_0_scl_i => IIC_0_scl_i,
+      IIC_0_scl_o => IIC_0_scl_o,
+      IIC_0_scl_t => IIC_0_scl_t,
+      IIC_0_sda_i => IIC_0_sda_i,
+      IIC_0_sda_o => IIC_0_sda_o,
+      IIC_0_sda_t => IIC_0_sda_t,
       TMDS_clk_n => TMDS_clk_n,
       TMDS_clk_p => TMDS_clk_p,
       TMDS_data_n(2 downto 0) => TMDS_data_n(2 downto 0),

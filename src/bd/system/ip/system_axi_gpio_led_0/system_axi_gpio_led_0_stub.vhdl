@@ -1,10 +1,10 @@
 -- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
--- Tool Version: Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
--- Date        : Sun Jan 28 23:33:41 2018
--- Host        : DESKTOP-LB2I44G running 64-bit major release  (build 9200)
+-- Tool Version: Vivado v.2017.4 (lin64) Build 2086221 Fri Dec 15 20:54:30 MST 2017
+-- Date        : Fri Mar 23 17:05:40 2018
+-- Host        : ubuntu running 64-bit Ubuntu 16.04.3 LTS
 -- Command     : write_vhdl -force -mode synth_stub
---               C:/work/git/Zybo-base-linux/src/bd/system/ip/system_axi_gpio_led_0/system_axi_gpio_led_0_stub.vhdl
+--               /home/digilent/work/git/Zybo-base-linux/src/bd/system/ip/system_axi_gpio_led_0/system_axi_gpio_led_0_stub.vhdl
 -- Design      : system_axi_gpio_led_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z010clg400-1
@@ -46,6 +46,6 @@ attribute black_box_pad_pin : string;
 attribute syn_black_box of stub : architecture is true;
 attribute black_box_pad_pin of stub : architecture is "s_axi_aclk,s_axi_aresetn,s_axi_awaddr[8:0],s_axi_awvalid,s_axi_awready,s_axi_wdata[31:0],s_axi_wstrb[3:0],s_axi_wvalid,s_axi_wready,s_axi_bresp[1:0],s_axi_bvalid,s_axi_bready,s_axi_araddr[8:0],s_axi_arvalid,s_axi_arready,s_axi_rdata[31:0],s_axi_rresp[1:0],s_axi_rvalid,s_axi_rready,gpio_io_i[3:0],gpio_io_o[3:0],gpio_io_t[3:0]";
 attribute x_core_info : string;
-attribute x_core_info of stub : architecture is "axi_gpio,Vivado 2017.2";
+attribute x_core_info of stub : architecture is "axi_gpio,Vivado 2017.4";
 begin
 end;

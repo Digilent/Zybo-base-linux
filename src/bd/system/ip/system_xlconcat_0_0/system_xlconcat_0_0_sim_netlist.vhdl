@@ -1,10 +1,10 @@
 -- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
--- Tool Version: Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
--- Date        : Sun Jan 28 23:30:20 2018
--- Host        : DESKTOP-LB2I44G running 64-bit major release  (build 9200)
+-- Tool Version: Vivado v.2017.4 (lin64) Build 2086221 Fri Dec 15 20:54:30 MST 2017
+-- Date        : Fri Mar 23 17:08:49 2018
+-- Host        : ubuntu running 64-bit Ubuntu 16.04.3 LTS
 -- Command     : write_vhdl -force -mode funcsim
---               C:/work/git/Zybo-base-linux/src/bd/system/ip/system_xlconcat_0_0/system_xlconcat_0_0_sim_netlist.vhdl
+--               /home/digilent/work/git/Zybo-base-linux/src/bd/system/ip/system_xlconcat_0_0/system_xlconcat_0_0_sim_netlist.vhdl
 -- Design      : system_xlconcat_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -30,7 +30,7 @@ entity system_xlconcat_0_0 is
   attribute DowngradeIPIdentifiedWarnings : string;
   attribute DowngradeIPIdentifiedWarnings of system_xlconcat_0_0 : entity is "yes";
   attribute X_CORE_INFO : string;
-  attribute X_CORE_INFO of system_xlconcat_0_0 : entity is "xlconcat_v2_1_1_xlconcat,Vivado 2017.2";
+  attribute X_CORE_INFO of system_xlconcat_0_0 : entity is "xlconcat_v2_1_1_xlconcat,Vivado 2017.4";
 end system_xlconcat_0_0;
 
 architecture STRUCTURE of system_xlconcat_0_0 is

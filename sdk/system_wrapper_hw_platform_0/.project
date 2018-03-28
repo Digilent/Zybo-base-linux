@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
 	<name>system_wrapper_hw_platform_0</name>
-	<comment>Created by SDK v2017.2</comment>
+	<comment>Created by SDK v2017.4</comment>
 	<projects>
 	</projects>
 	<buildSpec>
@@ -11,7 +11,7 @@
 	</natures>
 	<filteredResources>
 		<filter>
-			<id>1517212001556</id>
+			<id>1522196012607</id>
 			<name></name>
 			<type>6</type>
 			<matcher>
@@ -20,7 +20,7 @@
 			</matcher>
 		</filter>
 		<filter>
-			<id>1517212001563</id>
+			<id>1522196012609</id>
 			<name></name>
 			<type>6</type>
 			<matcher>
@@ -29,7 +29,7 @@
 			</matcher>
 		</filter>
 		<filter>
-			<id>1517212001569</id>
+			<id>1522196012611</id>
 			<name></name>
 			<type>6</type>
 			<matcher>
