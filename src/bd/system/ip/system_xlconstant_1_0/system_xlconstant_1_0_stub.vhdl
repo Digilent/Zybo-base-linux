@@ -1,8 +1,8 @@
--- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+-- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
--- Tool Version: Vivado v.2017.4 (lin64) Build 2086221 Fri Dec 15 20:54:30 MST 2017
--- Date        : Fri Mar 23 17:08:56 2018
--- Host        : ubuntu running 64-bit Ubuntu 16.04.3 LTS
+-- Tool Version: Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+-- Date        : Wed Jul  3 16:24:39 2019
+-- Host        : ashton-desktop running 64-bit Ubuntu 16.04.6 LTS
 -- Command     : write_vhdl -force -mode synth_stub -rename_top system_xlconstant_1_0 -prefix
 --               system_xlconstant_1_0_ system_xlconstant_0_0_stub.vhdl
 -- Design      : system_xlconstant_0_0
@@ -25,6 +25,6 @@ attribute black_box_pad_pin : string;
 attribute syn_black_box of stub : architecture is true;
 attribute black_box_pad_pin of stub : architecture is "dout[0:0]";
 attribute X_CORE_INFO : string;
-attribute X_CORE_INFO of stub : architecture is "xlconstant_v1_1_3_xlconstant,Vivado 2017.4";
+attribute X_CORE_INFO of stub : architecture is "xlconstant_v1_1_5_xlconstant,Vivado 2018.2";
 begin
 end;

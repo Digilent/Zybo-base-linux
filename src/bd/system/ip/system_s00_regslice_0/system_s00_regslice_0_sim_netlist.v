@@ -1,10 +1,10 @@
-// Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+// Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
-// Tool Version: Vivado v.2017.4 (lin64) Build 2086221 Fri Dec 15 20:54:30 MST 2017
-// Date        : Fri Mar 23 16:54:47 2018
-// Host        : ubuntu running 64-bit Ubuntu 16.04.3 LTS
+// Tool Version: Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+// Date        : Wed Jul  3 16:25:51 2019
+// Host        : ashton-desktop running 64-bit Ubuntu 16.04.6 LTS
 // Command     : write_verilog -force -mode funcsim
-//               /home/digilent/work/git/Zybo-base-linux/src/bd/system/ip/system_s00_regslice_0/system_s00_regslice_0_sim_netlist.v
+//               /home/ashton/repo/Zybo-base-linux/src/bd/system/ip/system_s00_regslice_0/system_s00_regslice_0_sim_netlist.v
 // Design      : system_s00_regslice_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -12,7 +12,7 @@
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CHECK_LICENSE_TYPE = "system_s00_regslice_0,axi_register_slice_v2_1_15_axi_register_slice,{}" *) (* DowngradeIPIdentifiedWarnings = "yes" *) (* X_CORE_INFO = "axi_register_slice_v2_1_15_axi_register_slice,Vivado 2017.4" *) 
+(* CHECK_LICENSE_TYPE = "system_s00_regslice_0,axi_register_slice_v2_1_17_axi_register_slice,{}" *) (* DowngradeIPIdentifiedWarnings = "yes" *) (* X_CORE_INFO = "axi_register_slice_v2_1_17_axi_register_slice,Vivado 2018.2" *) 
 (* NotValidForBitStream *)
 module system_s00_regslice_0
    (aclk,
@@ -259,7 +259,7 @@ module system_s00_regslice_0
   (* G_AXI_WUSER_WIDTH = "0" *) 
   (* P_FORWARD = "0" *) 
   (* P_RESPONSE = "1" *) 
-  system_s00_regslice_0_axi_register_slice_v2_1_15_axi_register_slice inst
+  system_s00_regslice_0_axi_register_slice_v2_1_17_axi_register_slice inst
        (.aclk(aclk),
         .aclk2x(1'b0),
         .aresetn(aresetn),
@@ -391,9 +391,9 @@ endmodule
 (* G_AXI_WDATA_WIDTH = "64" *) (* G_AXI_WID_INDEX = "73" *) (* G_AXI_WID_WIDTH = "0" *) 
 (* G_AXI_WLAST_INDEX = "72" *) (* G_AXI_WLAST_WIDTH = "1" *) (* G_AXI_WPAYLOAD_WIDTH = "73" *) 
 (* G_AXI_WSTRB_INDEX = "64" *) (* G_AXI_WSTRB_WIDTH = "8" *) (* G_AXI_WUSER_INDEX = "73" *) 
-(* G_AXI_WUSER_WIDTH = "0" *) (* ORIG_REF_NAME = "axi_register_slice_v2_1_15_axi_register_slice" *) (* P_FORWARD = "0" *) 
+(* G_AXI_WUSER_WIDTH = "0" *) (* ORIG_REF_NAME = "axi_register_slice_v2_1_17_axi_register_slice" *) (* P_FORWARD = "0" *) 
 (* P_RESPONSE = "1" *) 
-module system_s00_regslice_0_axi_register_slice_v2_1_15_axi_register_slice
+module system_s00_regslice_0_axi_register_slice_v2_1_17_axi_register_slice
    (aclk,
     aclk2x,
     aresetn,
@@ -673,7 +673,7 @@ module system_s00_regslice_0_axi_register_slice_v2_1_15_axi_register_slice
   assign s_axi_wready = m_axi_wready;
   GND GND
        (.G(\<const0> ));
-  system_s00_regslice_0_axi_register_slice_v2_1_15_axic_register_slice__parameterized2 \ar.ar_pipe 
+  system_s00_regslice_0_axi_register_slice_v2_1_17_axic_register_slice__parameterized2 \ar.ar_pipe 
        (.D({s_axi_arregion,s_axi_arqos,s_axi_arid,s_axi_arlock,s_axi_arlen,s_axi_arcache,s_axi_arburst,s_axi_arsize,s_axi_arprot,s_axi_araddr}),
         .Q({m_axi_arregion,m_axi_arqos,m_axi_arid,m_axi_arlock,m_axi_arlen,m_axi_arcache,m_axi_arburst,m_axi_arsize,m_axi_arprot,m_axi_araddr}),
         .aclk(aclk),
@@ -684,7 +684,7 @@ module system_s00_regslice_0_axi_register_slice_v2_1_15_axi_register_slice
         .p_0_in(p_0_in),
         .s_axi_arready(s_axi_arready),
         .s_axi_arvalid(s_axi_arvalid));
-  system_s00_regslice_0_axi_register_slice_v2_1_15_axic_register_slice__parameterized3 \r.r_pipe 
+  system_s00_regslice_0_axi_register_slice_v2_1_17_axic_register_slice__parameterized3 \r.r_pipe 
        (.Q({s_axi_rid,s_axi_rlast,s_axi_rresp,s_axi_rdata}),
         .aclk(aclk),
         .\aresetn_d_reg[1] (\ar.ar_pipe_n_2 ),
@@ -699,8 +699,8 @@ module system_s00_regslice_0_axi_register_slice_v2_1_15_axi_register_slice
         .s_axi_rvalid(s_axi_rvalid));
 endmodule
 
-(* ORIG_REF_NAME = "axi_register_slice_v2_1_15_axic_register_slice" *) 
-module system_s00_regslice_0_axi_register_slice_v2_1_15_axic_register_slice__parameterized2
+(* ORIG_REF_NAME = "axi_register_slice_v2_1_17_axic_register_slice" *) 
+module system_s00_regslice_0_axi_register_slice_v2_1_17_axic_register_slice__parameterized2
    (m_axi_arvalid,
     p_0_in,
     m_valid_i_reg_0,
@@ -1171,14 +1171,14 @@ module system_s00_regslice_0_axi_register_slice_v2_1_15_axic_register_slice__par
         .R(1'b0));
 endmodule
 
-(* ORIG_REF_NAME = "axi_register_slice_v2_1_15_axic_register_slice" *) 
-module system_s00_regslice_0_axi_register_slice_v2_1_15_axic_register_slice__parameterized3
+(* ORIG_REF_NAME = "axi_register_slice_v2_1_17_axic_register_slice" *) 
+module system_s00_regslice_0_axi_register_slice_v2_1_17_axic_register_slice__parameterized3
    (s_axi_rvalid,
     m_axi_rready,
     Q,
     aclk,
-    m_axi_rvalid,
     s_axi_rready,
+    m_axi_rvalid,
     \aresetn_d_reg[1] ,
     p_0_in,
     m_axi_rid,
@@ -1189,8 +1189,8 @@ module system_s00_regslice_0_axi_register_slice_v2_1_15_axic_register_slice__par
   output m_axi_rready;
   output [67:0]Q;
   input aclk;
-  input m_axi_rvalid;
   input s_axi_rready;
+  input m_axi_rvalid;
   input \aresetn_d_reg[1] ;
   input [0:0]p_0_in;
   input [0:0]m_axi_rid;
@@ -1207,9 +1207,9 @@ module system_s00_regslice_0_axi_register_slice_v2_1_15_axic_register_slice__par
   wire m_axi_rready;
   wire [1:0]m_axi_rresp;
   wire m_axi_rvalid;
-  wire \m_payload_i[67]_i_1_n_0 ;
   wire m_valid_i_i_1_n_0;
   wire [0:0]p_0_in;
+  wire p_1_in;
   wire s_axi_rready;
   wire s_axi_rvalid;
   wire s_ready_i_i_1_n_0;
@@ -1792,7 +1792,7 @@ module system_s00_regslice_0_axi_register_slice_v2_1_15_axic_register_slice__par
     \m_payload_i[67]_i_1 
        (.I0(s_axi_rready),
         .I1(s_axi_rvalid),
-        .O(\m_payload_i[67]_i_1_n_0 ));
+        .O(p_1_in));
   (* SOFT_HLUTNM = "soft_lutpair33" *) 
   LUT3 #(
     .INIT(8'hAC)) 
@@ -1835,419 +1835,419 @@ module system_s00_regslice_0_axi_register_slice_v2_1_15_axic_register_slice__par
         .O(skid_buffer[9]));
   FDRE \m_payload_i_reg[0] 
        (.C(aclk),
-        .CE(\m_payload_i[67]_i_1_n_0 ),
+        .CE(p_1_in),
         .D(skid_buffer[0]),
         .Q(Q[0]),
         .R(1'b0));
   FDRE \m_payload_i_reg[10] 
        (.C(aclk),
-        .CE(\m_payload_i[67]_i_1_n_0 ),
+        .CE(p_1_in),
         .D(skid_buffer[10]),
         .Q(Q[10]),
         .R(1'b0));
   FDRE \m_payload_i_reg[11] 
        (.C(aclk),
-        .CE(\m_payload_i[67]_i_1_n_0 ),
+        .CE(p_1_in),
         .D(skid_buffer[11]),
         .Q(Q[11]),
         .R(1'b0));
   FDRE \m_payload_i_reg[12] 
        (.C(aclk),
-        .CE(\m_payload_i[67]_i_1_n_0 ),
+        .CE(p_1_in),
         .D(skid_buffer[12]),
         .Q(Q[12]),
         .R(1'b0));
   FDRE \m_payload_i_reg[13] 
        (.C(aclk),
-        .CE(\m_payload_i[67]_i_1_n_0 ),
+        .CE(p_1_in),
         .D(skid_buffer[13]),
         .Q(Q[13]),
         .R(1'b0));
   FDRE \m_payload_i_reg[14] 
        (.C(aclk),
-        .CE(\m_payload_i[67]_i_1_n_0 ),
+        .CE(p_1_in),
         .D(skid_buffer[14]),
         .Q(Q[14]),
         .R(1'b0));
   FDRE \m_payload_i_reg[15] 
        (.C(aclk),
-        .CE(\m_payload_i[67]_i_1_n_0 ),
+        .CE(p_1_in),
         .D(skid_buffer[15]),
         .Q(Q[15]),
         .R(1'b0));
   FDRE \m_payload_i_reg[16] 
        (.C(aclk),
-        .CE(\m_payload_i[67]_i_1_n_0 ),
+        .CE(p_1_in),
         .D(skid_buffer[16]),
         .Q(Q[16]),
         .R(1'b0));
   FDRE \m_payload_i_reg[17] 
        (.C(aclk),
-        .CE(\m_payload_i[67]_i_1_n_0 ),
+        .CE(p_1_in),
         .D(skid_buffer[17]),
         .Q(Q[17]),
         .R(1'b0));
   FDRE \m_payload_i_reg[18] 
        (.C(aclk),
-        .CE(\m_payload_i[67]_i_1_n_0 ),
+        .CE(p_1_in),
         .D(skid_buffer[18]),
         .Q(Q[18]),
         .R(1'b0));
   FDRE \m_payload_i_reg[19] 
        (.C(aclk),
-        .CE(\m_payload_i[67]_i_1_n_0 ),
+        .CE(p_1_in),
         .D(skid_buffer[19]),
         .Q(Q[19]),
         .R(1'b0));
   FDRE \m_payload_i_reg[1] 
        (.C(aclk),
-        .CE(\m_payload_i[67]_i_1_n_0 ),
+        .CE(p_1_in),
         .D(skid_buffer[1]),
         .Q(Q[1]),
         .R(1'b0));
   FDRE \m_payload_i_reg[20] 
        (.C(aclk),
-        .CE(\m_payload_i[67]_i_1_n_0 ),
+        .CE(p_1_in),
         .D(skid_buffer[20]),
         .Q(Q[20]),
         .R(1'b0));
   FDRE \m_payload_i_reg[21] 
        (.C(aclk),
-        .CE(\m_payload_i[67]_i_1_n_0 ),
+        .CE(p_1_in),
         .D(skid_buffer[21]),
         .Q(Q[21]),
         .R(1'b0));
   FDRE \m_payload_i_reg[22] 
        (.C(aclk),
-        .CE(\m_payload_i[67]_i_1_n_0 ),
+        .CE(p_1_in),
         .D(skid_buffer[22]),
         .Q(Q[22]),
         .R(1'b0));
   FDRE \m_payload_i_reg[23] 
        (.C(aclk),
-        .CE(\m_payload_i[67]_i_1_n_0 ),
+        .CE(p_1_in),
         .D(skid_buffer[23]),
         .Q(Q[23]),
         .R(1'b0));
   FDRE \m_payload_i_reg[24] 
        (.C(aclk),
-        .CE(\m_payload_i[67]_i_1_n_0 ),
+        .CE(p_1_in),
         .D(skid_buffer[24]),
         .Q(Q[24]),
         .R(1'b0));
   FDRE \m_payload_i_reg[25] 
        (.C(aclk),
-        .CE(\m_payload_i[67]_i_1_n_0 ),
+        .CE(p_1_in),
         .D(skid_buffer[25]),
         .Q(Q[25]),
         .R(1'b0));
   FDRE \m_payload_i_reg[26] 
        (.C(aclk),
-        .CE(\m_payload_i[67]_i_1_n_0 ),
+        .CE(p_1_in),
         .D(skid_buffer[26]),
         .Q(Q[26]),
         .R(1'b0));
   FDRE \m_payload_i_reg[27] 
        (.C(aclk),
-        .CE(\m_payload_i[67]_i_1_n_0 ),
+        .CE(p_1_in),
         .D(skid_buffer[27]),
         .Q(Q[27]),
         .R(1'b0));
   FDRE \m_payload_i_reg[28] 
        (.C(aclk),
-        .CE(\m_payload_i[67]_i_1_n_0 ),
+        .CE(p_1_in),
         .D(skid_buffer[28]),
         .Q(Q[28]),
         .R(1'b0));
   FDRE \m_payload_i_reg[29] 
        (.C(aclk),
-        .CE(\m_payload_i[67]_i_1_n_0 ),
+        .CE(p_1_in),
         .D(skid_buffer[29]),
         .Q(Q[29]),
         .R(1'b0));
   FDRE \m_payload_i_reg[2] 
        (.C(aclk),
-        .CE(\m_payload_i[67]_i_1_n_0 ),
+        .CE(p_1_in),
         .D(skid_buffer[2]),
         .Q(Q[2]),
         .R(1'b0));
   FDRE \m_payload_i_reg[30] 
        (.C(aclk),
-        .CE(\m_payload_i[67]_i_1_n_0 ),
+        .CE(p_1_in),
         .D(skid_buffer[30]),
         .Q(Q[30]),
         .R(1'b0));
   FDRE \m_payload_i_reg[31] 
        (.C(aclk),
-        .CE(\m_payload_i[67]_i_1_n_0 ),
+        .CE(p_1_in),
         .D(skid_buffer[31]),
         .Q(Q[31]),
         .R(1'b0));
   FDRE \m_payload_i_reg[32] 
        (.C(aclk),
-        .CE(\m_payload_i[67]_i_1_n_0 ),
+        .CE(p_1_in),
         .D(skid_buffer[32]),
         .Q(Q[32]),
         .R(1'b0));
   FDRE \m_payload_i_reg[33] 
        (.C(aclk),
-        .CE(\m_payload_i[67]_i_1_n_0 ),
+        .CE(p_1_in),
         .D(skid_buffer[33]),
         .Q(Q[33]),
         .R(1'b0));
   FDRE \m_payload_i_reg[34] 
        (.C(aclk),
-        .CE(\m_payload_i[67]_i_1_n_0 ),
+        .CE(p_1_in),
         .D(skid_buffer[34]),
         .Q(Q[34]),
         .R(1'b0));
   FDRE \m_payload_i_reg[35] 
        (.C(aclk),
-        .CE(\m_payload_i[67]_i_1_n_0 ),
+        .CE(p_1_in),
         .D(skid_buffer[35]),
         .Q(Q[35]),
         .R(1'b0));
   FDRE \m_payload_i_reg[36] 
        (.C(aclk),
-        .CE(\m_payload_i[67]_i_1_n_0 ),
+        .CE(p_1_in),
         .D(skid_buffer[36]),
         .Q(Q[36]),
         .R(1'b0));
   FDRE \m_payload_i_reg[37] 
        (.C(aclk),
-        .CE(\m_payload_i[67]_i_1_n_0 ),
+        .CE(p_1_in),
         .D(skid_buffer[37]),
         .Q(Q[37]),
         .R(1'b0));
   FDRE \m_payload_i_reg[38] 
        (.C(aclk),
-        .CE(\m_payload_i[67]_i_1_n_0 ),
+        .CE(p_1_in),
         .D(skid_buffer[38]),
         .Q(Q[38]),
         .R(1'b0));
   FDRE \m_payload_i_reg[39] 
        (.C(aclk),
-        .CE(\m_payload_i[67]_i_1_n_0 ),
+        .CE(p_1_in),
         .D(skid_buffer[39]),
         .Q(Q[39]),
         .R(1'b0));
   FDRE \m_payload_i_reg[3] 
        (.C(aclk),
-        .CE(\m_payload_i[67]_i_1_n_0 ),
+        .CE(p_1_in),
         .D(skid_buffer[3]),
         .Q(Q[3]),
         .R(1'b0));
   FDRE \m_payload_i_reg[40] 
        (.C(aclk),
-        .CE(\m_payload_i[67]_i_1_n_0 ),
+        .CE(p_1_in),
         .D(skid_buffer[40]),
         .Q(Q[40]),
         .R(1'b0));
   FDRE \m_payload_i_reg[41] 
        (.C(aclk),
-        .CE(\m_payload_i[67]_i_1_n_0 ),
+        .CE(p_1_in),
         .D(skid_buffer[41]),
         .Q(Q[41]),
         .R(1'b0));
   FDRE \m_payload_i_reg[42] 
        (.C(aclk),
-        .CE(\m_payload_i[67]_i_1_n_0 ),
+        .CE(p_1_in),
         .D(skid_buffer[42]),
         .Q(Q[42]),
         .R(1'b0));
   FDRE \m_payload_i_reg[43] 
        (.C(aclk),
-        .CE(\m_payload_i[67]_i_1_n_0 ),
+        .CE(p_1_in),
         .D(skid_buffer[43]),
         .Q(Q[43]),
         .R(1'b0));
   FDRE \m_payload_i_reg[44] 
        (.C(aclk),
-        .CE(\m_payload_i[67]_i_1_n_0 ),
+        .CE(p_1_in),
         .D(skid_buffer[44]),
         .Q(Q[44]),
         .R(1'b0));
   FDRE \m_payload_i_reg[45] 
        (.C(aclk),
-        .CE(\m_payload_i[67]_i_1_n_0 ),
+        .CE(p_1_in),
         .D(skid_buffer[45]),
         .Q(Q[45]),
         .R(1'b0));
   FDRE \m_payload_i_reg[46] 
        (.C(aclk),
-        .CE(\m_payload_i[67]_i_1_n_0 ),
+        .CE(p_1_in),
         .D(skid_buffer[46]),
         .Q(Q[46]),
         .R(1'b0));
   FDRE \m_payload_i_reg[47] 
        (.C(aclk),
-        .CE(\m_payload_i[67]_i_1_n_0 ),
+        .CE(p_1_in),
         .D(skid_buffer[47]),
         .Q(Q[47]),
         .R(1'b0));
   FDRE \m_payload_i_reg[48] 
        (.C(aclk),
-        .CE(\m_payload_i[67]_i_1_n_0 ),
+        .CE(p_1_in),
         .D(skid_buffer[48]),
         .Q(Q[48]),
         .R(1'b0));
   FDRE \m_payload_i_reg[49] 
        (.C(aclk),
-        .CE(\m_payload_i[67]_i_1_n_0 ),
+        .CE(p_1_in),
         .D(skid_buffer[49]),
         .Q(Q[49]),
         .R(1'b0));
   FDRE \m_payload_i_reg[4] 
        (.C(aclk),
-        .CE(\m_payload_i[67]_i_1_n_0 ),
+        .CE(p_1_in),
         .D(skid_buffer[4]),
         .Q(Q[4]),
         .R(1'b0));
   FDRE \m_payload_i_reg[50] 
        (.C(aclk),
-        .CE(\m_payload_i[67]_i_1_n_0 ),
+        .CE(p_1_in),
         .D(skid_buffer[50]),
         .Q(Q[50]),
         .R(1'b0));
   FDRE \m_payload_i_reg[51] 
        (.C(aclk),
-        .CE(\m_payload_i[67]_i_1_n_0 ),
+        .CE(p_1_in),
         .D(skid_buffer[51]),
         .Q(Q[51]),
         .R(1'b0));
   FDRE \m_payload_i_reg[52] 
        (.C(aclk),
-        .CE(\m_payload_i[67]_i_1_n_0 ),
+        .CE(p_1_in),
         .D(skid_buffer[52]),
         .Q(Q[52]),
         .R(1'b0));
   FDRE \m_payload_i_reg[53] 
        (.C(aclk),
-        .CE(\m_payload_i[67]_i_1_n_0 ),
+        .CE(p_1_in),
         .D(skid_buffer[53]),
         .Q(Q[53]),
         .R(1'b0));
   FDRE \m_payload_i_reg[54] 
        (.C(aclk),
-        .CE(\m_payload_i[67]_i_1_n_0 ),
+        .CE(p_1_in),
         .D(skid_buffer[54]),
         .Q(Q[54]),
         .R(1'b0));
   FDRE \m_payload_i_reg[55] 
        (.C(aclk),
-        .CE(\m_payload_i[67]_i_1_n_0 ),
+        .CE(p_1_in),
         .D(skid_buffer[55]),
         .Q(Q[55]),
         .R(1'b0));
   FDRE \m_payload_i_reg[56] 
        (.C(aclk),
-        .CE(\m_payload_i[67]_i_1_n_0 ),
+        .CE(p_1_in),
         .D(skid_buffer[56]),
         .Q(Q[56]),
         .R(1'b0));
   FDRE \m_payload_i_reg[57] 
        (.C(aclk),
-        .CE(\m_payload_i[67]_i_1_n_0 ),
+        .CE(p_1_in),
         .D(skid_buffer[57]),
         .Q(Q[57]),
         .R(1'b0));
   FDRE \m_payload_i_reg[58] 
        (.C(aclk),
-        .CE(\m_payload_i[67]_i_1_n_0 ),
+        .CE(p_1_in),
         .D(skid_buffer[58]),
         .Q(Q[58]),
         .R(1'b0));
   FDRE \m_payload_i_reg[59] 
        (.C(aclk),
-        .CE(\m_payload_i[67]_i_1_n_0 ),
+        .CE(p_1_in),
         .D(skid_buffer[59]),
         .Q(Q[59]),
         .R(1'b0));
   FDRE \m_payload_i_reg[5] 
        (.C(aclk),
-        .CE(\m_payload_i[67]_i_1_n_0 ),
+        .CE(p_1_in),
         .D(skid_buffer[5]),
         .Q(Q[5]),
         .R(1'b0));
   FDRE \m_payload_i_reg[60] 
        (.C(aclk),
-        .CE(\m_payload_i[67]_i_1_n_0 ),
+        .CE(p_1_in),
         .D(skid_buffer[60]),
         .Q(Q[60]),
         .R(1'b0));
   FDRE \m_payload_i_reg[61] 
        (.C(aclk),
-        .CE(\m_payload_i[67]_i_1_n_0 ),
+        .CE(p_1_in),
         .D(skid_buffer[61]),
         .Q(Q[61]),
         .R(1'b0));
   FDRE \m_payload_i_reg[62] 
        (.C(aclk),
-        .CE(\m_payload_i[67]_i_1_n_0 ),
+        .CE(p_1_in),
         .D(skid_buffer[62]),
         .Q(Q[62]),
         .R(1'b0));
   FDRE \m_payload_i_reg[63] 
        (.C(aclk),
-        .CE(\m_payload_i[67]_i_1_n_0 ),
+        .CE(p_1_in),
         .D(skid_buffer[63]),
         .Q(Q[63]),
         .R(1'b0));
   FDRE \m_payload_i_reg[64] 
        (.C(aclk),
-        .CE(\m_payload_i[67]_i_1_n_0 ),
+        .CE(p_1_in),
         .D(skid_buffer[64]),
         .Q(Q[64]),
         .R(1'b0));
   FDRE \m_payload_i_reg[65] 
        (.C(aclk),
-        .CE(\m_payload_i[67]_i_1_n_0 ),
+        .CE(p_1_in),
         .D(skid_buffer[65]),
         .Q(Q[65]),
         .R(1'b0));
   FDRE \m_payload_i_reg[66] 
        (.C(aclk),
-        .CE(\m_payload_i[67]_i_1_n_0 ),
+        .CE(p_1_in),
         .D(skid_buffer[66]),
         .Q(Q[66]),
         .R(1'b0));
   FDRE \m_payload_i_reg[67] 
        (.C(aclk),
-        .CE(\m_payload_i[67]_i_1_n_0 ),
+        .CE(p_1_in),
         .D(skid_buffer[67]),
         .Q(Q[67]),
         .R(1'b0));
   FDRE \m_payload_i_reg[6] 
        (.C(aclk),
-        .CE(\m_payload_i[67]_i_1_n_0 ),
+        .CE(p_1_in),
         .D(skid_buffer[6]),
         .Q(Q[6]),
         .R(1'b0));
   FDRE \m_payload_i_reg[7] 
        (.C(aclk),
-        .CE(\m_payload_i[67]_i_1_n_0 ),
+        .CE(p_1_in),
         .D(skid_buffer[7]),
         .Q(Q[7]),
         .R(1'b0));
   FDRE \m_payload_i_reg[8] 
        (.C(aclk),
-        .CE(\m_payload_i[67]_i_1_n_0 ),
+        .CE(p_1_in),
         .D(skid_buffer[8]),
         .Q(Q[8]),
         .R(1'b0));
   FDRE \m_payload_i_reg[9] 
        (.C(aclk),
-        .CE(\m_payload_i[67]_i_1_n_0 ),
+        .CE(p_1_in),
         .D(skid_buffer[9]),
         .Q(Q[9]),
         .R(1'b0));
   LUT5 #(
-    .INIT(32'hBAFF0000)) 
+    .INIT(32'hFF2F0000)) 
     m_valid_i_i_1
-       (.I0(m_axi_rvalid),
+       (.I0(s_axi_rvalid),
         .I1(s_axi_rready),
-        .I2(s_axi_rvalid),
-        .I3(m_axi_rready),
+        .I2(m_axi_rready),
+        .I3(m_axi_rvalid),
         .I4(\aresetn_d_reg[1] ),
         .O(m_valid_i_i_1_n_0));
   FDRE #(

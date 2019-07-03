@@ -1,4 +1,4 @@
--- (c) Copyright 1995-2018 Xilinx, Inc. All rights reserved.
+-- (c) Copyright 1995-2019 Xilinx, Inc. All rights reserved.
 -- 
 -- This file contains confidential and proprietary information
 -- of Xilinx, Inc. and is protected under U.S. and
@@ -47,14 +47,11 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:ip:util_ds_buf:2.1
--- IP Revision: 7
+-- IP Revision: 10
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
 USE ieee.numeric_std.ALL;
-
-LIBRARY util_ds_buf_v2_01_a;
-USE util_ds_buf_v2_01_a.util_ds_buf;
 
 ENTITY system_util_ds_buf_0_0 IS
   PORT (
@@ -84,6 +81,7 @@ ARCHITECTURE system_util_ds_buf_0_0_arch OF system_util_ds_buf_0_0 IS
       IOBUF_IO_T : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
       IOBUF_IO_I : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
       IOBUF_IO_O : OUT STD_LOGIC_VECTOR(0 DOWNTO 0);
+      IOBUF_IO_IO : INOUT STD_LOGIC_VECTOR(0 DOWNTO 0);
       BUFG_I : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
       BUFG_O : OUT STD_LOGIC_VECTOR(0 DOWNTO 0);
       BUFGCE_I : IN STD_LOGIC_VECTOR(0 DOWNTO 0);

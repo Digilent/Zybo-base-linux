@@ -452,7 +452,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>ASSOCIATED_RESET</spirit:name>
-          <spirit:value spirit:id="BUSIFPARAM_VALUE.S_AXI_ACLK.ASSOCIATED_RESET">aresetn</spirit:value>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.S_AXI_ACLK.ASSOCIATED_RESET">s_axi_aresetn</spirit:value>
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>FREQ_HZ</spirit:name>
@@ -1081,7 +1081,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>7:bd9e4196</spirit:value>
+            <spirit:value>8:ca37ba0a</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1089,17 +1089,18 @@
         <spirit:name>xilinx_anylanguagesynthesis</spirit:name>
         <spirit:displayName>Synthesis</spirit:displayName>
         <spirit:envIdentifier>:vivado.xilinx.com:synthesis</spirit:envIdentifier>
+        <spirit:modelName>clk_wiz_v6_0_1</spirit:modelName>
         <spirit:fileSetRef>
           <spirit:localName>xilinx_anylanguagesynthesis_view_fileset</spirit:localName>
         </spirit:fileSetRef>
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Mar 23 23:46:48 UTC 2018</spirit:value>
+            <spirit:value>Wed Jul 03 21:20:26 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>7:f8cb2ae4</spirit:value>
+            <spirit:value>8:a1aec747</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1107,17 +1108,18 @@
         <spirit:name>xilinx_anylanguagesynthesiswrapper</spirit:name>
         <spirit:displayName>Synthesis Wrapper</spirit:displayName>
         <spirit:envIdentifier>:vivado.xilinx.com:synthesis.wrapper</spirit:envIdentifier>
+        <spirit:modelName>system_clk_wiz_0_0</spirit:modelName>
         <spirit:fileSetRef>
           <spirit:localName>xilinx_anylanguagesynthesiswrapper_view_fileset</spirit:localName>
         </spirit:fileSetRef>
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Mar 23 23:46:48 UTC 2018</spirit:value>
+            <spirit:value>Wed Jul 03 21:20:26 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>7:f8cb2ae4</spirit:value>
+            <spirit:value>8:a1aec747</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1125,17 +1127,18 @@
         <spirit:name>xilinx_anylanguagebehavioralsimulation</spirit:name>
         <spirit:displayName>Simulation</spirit:displayName>
         <spirit:envIdentifier>:vivado.xilinx.com:simulation</spirit:envIdentifier>
+        <spirit:modelName>clk_wiz_v6_0_1</spirit:modelName>
         <spirit:fileSetRef>
           <spirit:localName>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:localName>
         </spirit:fileSetRef>
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Mar 23 23:46:48 UTC 2018</spirit:value>
+            <spirit:value>Wed Jul 03 21:20:26 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>7:7a781ef2</spirit:value>
+            <spirit:value>8:3c76414e</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1143,17 +1146,18 @@
         <spirit:name>xilinx_anylanguagesimulationwrapper</spirit:name>
         <spirit:displayName>Simulation Wrapper</spirit:displayName>
         <spirit:envIdentifier>:vivado.xilinx.com:simulation.wrapper</spirit:envIdentifier>
+        <spirit:modelName>system_clk_wiz_0_0</spirit:modelName>
         <spirit:fileSetRef>
           <spirit:localName>xilinx_anylanguagesimulationwrapper_view_fileset</spirit:localName>
         </spirit:fileSetRef>
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Mar 23 23:46:48 UTC 2018</spirit:value>
+            <spirit:value>Wed Jul 03 21:20:26 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>7:7a781ef2</spirit:value>
+            <spirit:value>8:3c76414e</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1167,11 +1171,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Mar 23 23:46:49 UTC 2018</spirit:value>
+            <spirit:value>Wed Jul 03 21:20:27 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>7:f8cb2ae4</spirit:value>
+            <spirit:value>8:a1aec747</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1185,11 +1189,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Mar 23 23:54:46 UTC 2018</spirit:value>
+            <spirit:value>Wed Jul 03 21:22:39 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>7:f8cb2ae4</spirit:value>
+            <spirit:value>8:a1aec747</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -3499,40 +3503,40 @@
         <spirit:userFileType>USED_IN_synthesis</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/4868/mmcm_pll_drp_func_7s_mmcm.vh</spirit:name>
+        <spirit:name>../../ipshared/b65a/mmcm_pll_drp_func_7s_mmcm.vh</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:isIncludeFile>true</spirit:isIncludeFile>
-        <spirit:logicalName>clk_wiz_v5_4_3</spirit:logicalName>
+        <spirit:logicalName>clk_wiz_v6_0_1</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/4868/mmcm_pll_drp_func_7s_pll.vh</spirit:name>
+        <spirit:name>../../ipshared/b65a/mmcm_pll_drp_func_7s_pll.vh</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:isIncludeFile>true</spirit:isIncludeFile>
-        <spirit:logicalName>clk_wiz_v5_4_3</spirit:logicalName>
+        <spirit:logicalName>clk_wiz_v6_0_1</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/4868/mmcm_pll_drp_func_us_mmcm.vh</spirit:name>
+        <spirit:name>../../ipshared/b65a/mmcm_pll_drp_func_us_mmcm.vh</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:isIncludeFile>true</spirit:isIncludeFile>
-        <spirit:logicalName>clk_wiz_v5_4_3</spirit:logicalName>
+        <spirit:logicalName>clk_wiz_v6_0_1</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/4868/mmcm_pll_drp_func_us_pll.vh</spirit:name>
+        <spirit:name>../../ipshared/b65a/mmcm_pll_drp_func_us_pll.vh</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:isIncludeFile>true</spirit:isIncludeFile>
-        <spirit:logicalName>clk_wiz_v5_4_3</spirit:logicalName>
+        <spirit:logicalName>clk_wiz_v6_0_1</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/4868/mmcm_pll_drp_func_us_plus_pll.vh</spirit:name>
+        <spirit:name>../../ipshared/b65a/mmcm_pll_drp_func_us_plus_pll.vh</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:isIncludeFile>true</spirit:isIncludeFile>
-        <spirit:logicalName>clk_wiz_v5_4_3</spirit:logicalName>
+        <spirit:logicalName>clk_wiz_v6_0_1</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/4868/mmcm_pll_drp_func_us_plus_mmcm.vh</spirit:name>
+        <spirit:name>../../ipshared/b65a/mmcm_pll_drp_func_us_plus_mmcm.vh</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:isIncludeFile>true</spirit:isIncludeFile>
-        <spirit:logicalName>clk_wiz_v5_4_3</spirit:logicalName>
+        <spirit:logicalName>clk_wiz_v6_0_1</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>system_clk_wiz_0_0_clk_wiz.v</spirit:name>
@@ -3549,46 +3553,46 @@
     <spirit:fileSet>
       <spirit:name>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../ipshared/4868/mmcm_pll_drp_func_7s_mmcm.vh</spirit:name>
+        <spirit:name>../../ipshared/b65a/mmcm_pll_drp_func_7s_mmcm.vh</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
         <spirit:isIncludeFile>true</spirit:isIncludeFile>
-        <spirit:logicalName>clk_wiz_v5_4_3</spirit:logicalName>
+        <spirit:logicalName>clk_wiz_v6_0_1</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/4868/mmcm_pll_drp_func_7s_pll.vh</spirit:name>
+        <spirit:name>../../ipshared/b65a/mmcm_pll_drp_func_7s_pll.vh</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
         <spirit:isIncludeFile>true</spirit:isIncludeFile>
-        <spirit:logicalName>clk_wiz_v5_4_3</spirit:logicalName>
+        <spirit:logicalName>clk_wiz_v6_0_1</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/4868/mmcm_pll_drp_func_us_mmcm.vh</spirit:name>
+        <spirit:name>../../ipshared/b65a/mmcm_pll_drp_func_us_mmcm.vh</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
         <spirit:isIncludeFile>true</spirit:isIncludeFile>
-        <spirit:logicalName>clk_wiz_v5_4_3</spirit:logicalName>
+        <spirit:logicalName>clk_wiz_v6_0_1</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/4868/mmcm_pll_drp_func_us_pll.vh</spirit:name>
+        <spirit:name>../../ipshared/b65a/mmcm_pll_drp_func_us_pll.vh</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
         <spirit:isIncludeFile>true</spirit:isIncludeFile>
-        <spirit:logicalName>clk_wiz_v5_4_3</spirit:logicalName>
+        <spirit:logicalName>clk_wiz_v6_0_1</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/4868/mmcm_pll_drp_func_us_plus_pll.vh</spirit:name>
+        <spirit:name>../../ipshared/b65a/mmcm_pll_drp_func_us_plus_pll.vh</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
         <spirit:isIncludeFile>true</spirit:isIncludeFile>
-        <spirit:logicalName>clk_wiz_v5_4_3</spirit:logicalName>
+        <spirit:logicalName>clk_wiz_v6_0_1</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/4868/mmcm_pll_drp_func_us_plus_mmcm.vh</spirit:name>
+        <spirit:name>../../ipshared/b65a/mmcm_pll_drp_func_us_plus_mmcm.vh</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
         <spirit:isIncludeFile>true</spirit:isIncludeFile>
-        <spirit:logicalName>clk_wiz_v5_4_3</spirit:logicalName>
+        <spirit:logicalName>clk_wiz_v6_0_1</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>system_clk_wiz_0_0_clk_wiz.v</spirit:name>
@@ -4712,7 +4716,7 @@
       <xilinx:xpmLibraries>
         <xilinx:xpmLibrary>XPM_CDC</xilinx:xpmLibrary>
       </xilinx:xpmLibraries>
-      <xilinx:coreRevision>3</xilinx:coreRevision>
+      <xilinx:coreRevision>1</xilinx:coreRevision>
       <xilinx:configElementInfos>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLOCK_CLK_IN1.ASSOCIATED_BUSIF" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLOCK_CLK_IN1.ASSOCIATED_RESET" xilinx:valuePermission="bd"/>
@@ -4740,12 +4744,12 @@
       </xilinx:configElementInfos>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
-      <xilinx:xilinxVersion>2017.4</xilinx:xilinxVersion>
-      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="47eccc34"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="0eced063"/>
+      <xilinx:xilinxVersion>2018.2</xilinx:xilinxVersion>
+      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="efefe28e"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="cc300a3c"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="4f3d3737"/>
-      <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="0f2f17dd"/>
-      <xilinx:checksum xilinx:scope="parameters" xilinx:value="488ef609"/>
+      <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="fcf089ff"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="96115976"/>
     </xilinx:packagingInfo>
   </spirit:vendorExtensions>
 </spirit:component>

@@ -387,17 +387,18 @@
         <spirit:displayName>VHDL Synthesis</spirit:displayName>
         <spirit:envIdentifier>vhdlSource:vivado.xilinx.com:synthesis</spirit:envIdentifier>
         <spirit:language>vhdl</spirit:language>
+        <spirit:modelName>rgb2dvi</spirit:modelName>
         <spirit:fileSetRef>
           <spirit:localName>xilinx_vhdlsynthesis_view_fileset</spirit:localName>
         </spirit:fileSetRef>
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Mar 23 23:47:43 UTC 2018</spirit:value>
+            <spirit:value>Wed Jul 03 21:20:49 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>7:ebe11164</spirit:value>
+            <spirit:value>8:60d32159</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -406,17 +407,18 @@
         <spirit:displayName>VHDL Synthesis Wrapper</spirit:displayName>
         <spirit:envIdentifier>vhdlSource:vivado.xilinx.com:synthesis.wrapper</spirit:envIdentifier>
         <spirit:language>vhdl</spirit:language>
+        <spirit:modelName>system_rgb2dvi_0_0</spirit:modelName>
         <spirit:fileSetRef>
           <spirit:localName>xilinx_vhdlsynthesiswrapper_view_fileset</spirit:localName>
         </spirit:fileSetRef>
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Mar 23 23:47:43 UTC 2018</spirit:value>
+            <spirit:value>Wed Jul 03 21:20:49 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>7:ebe11164</spirit:value>
+            <spirit:value>8:60d32159</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -425,17 +427,18 @@
         <spirit:displayName>VHDL Simulation</spirit:displayName>
         <spirit:envIdentifier>vhdlSource:vivado.xilinx.com:simulation</spirit:envIdentifier>
         <spirit:language>vhdl</spirit:language>
+        <spirit:modelName>rgb2dvi</spirit:modelName>
         <spirit:fileSetRef>
           <spirit:localName>xilinx_vhdlbehavioralsimulation_view_fileset</spirit:localName>
         </spirit:fileSetRef>
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Mar 23 23:47:43 UTC 2018</spirit:value>
+            <spirit:value>Wed Jul 03 21:20:49 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>7:f6f99ea1</spirit:value>
+            <spirit:value>8:31f3f95b</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -444,17 +447,18 @@
         <spirit:displayName>VHDL Simulation Wrapper</spirit:displayName>
         <spirit:envIdentifier>vhdlSource:vivado.xilinx.com:simulation.wrapper</spirit:envIdentifier>
         <spirit:language>vhdl</spirit:language>
+        <spirit:modelName>system_rgb2dvi_0_0</spirit:modelName>
         <spirit:fileSetRef>
           <spirit:localName>xilinx_vhdlsimulationwrapper_view_fileset</spirit:localName>
         </spirit:fileSetRef>
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Mar 23 23:47:43 UTC 2018</spirit:value>
+            <spirit:value>Wed Jul 03 21:20:49 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>7:f6f99ea1</spirit:value>
+            <spirit:value>8:31f3f95b</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -468,11 +472,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Mar 23 23:59:38 UTC 2018</spirit:value>
+            <spirit:value>Wed Jul 03 21:24:43 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>7:ebe11164</spirit:value>
+            <spirit:value>8:60d32159</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>

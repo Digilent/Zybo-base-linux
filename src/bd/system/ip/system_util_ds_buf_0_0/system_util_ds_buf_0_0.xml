@@ -55,7 +55,7 @@
       <spirit:vendorExtensions>
         <xilinx:busInterfaceInfo>
           <xilinx:enablement>
-            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="BUSIF_ENABLEMENT.CLK_IN_D" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_BUF_TYPE&apos;)) = &apos;IBUFDS&apos; or spirit:decode(id(&apos;MODELPARAM_VALUE.C_BUF_TYPE&apos;)) = &apos;IBUFDSGTE2&apos; or spirit:decode(id(&apos;MODELPARAM_VALUE.C_BUF_TYPE&apos;)) = &apos;IBUFDSGTE3&apos; or spirit:decode(id(&apos;MODELPARAM_VALUE.C_BUF_TYPE&apos;)) = &apos;IBUFDSGTE4&apos;">false</xilinx:isEnabled>
+            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="BUSIF_ENABLEMENT.CLK_IN_D" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_BUF_TYPE&apos;)) = &apos;IBUFDS&apos; or spirit:decode(id(&apos;MODELPARAM_VALUE.C_BUF_TYPE&apos;)) = &apos;IBUFDSGTE2&apos; or spirit:decode(id(&apos;MODELPARAM_VALUE.C_BUF_TYPE&apos;)) = &apos;IBUFDSGTE3&apos; or spirit:decode(id(&apos;MODELPARAM_VALUE.C_BUF_TYPE&apos;)) = &apos;IBUFDSGTE4&apos; or spirit:decode(id(&apos;MODELPARAM_VALUE.C_BUF_TYPE&apos;)) = &apos;IBUFDSGTE5&apos;">false</xilinx:isEnabled>
           </xilinx:enablement>
         </xilinx:busInterfaceInfo>
       </spirit:vendorExtensions>
@@ -128,7 +128,7 @@
       <spirit:vendorExtensions>
         <xilinx:busInterfaceInfo>
           <xilinx:enablement>
-            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="BUSIF_ENABLEMENT.IBUF_OUT" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_BUF_TYPE&apos;)) = &apos;IBUFDS&apos; or spirit:decode(id(&apos;MODELPARAM_VALUE.C_BUF_TYPE&apos;)) = &apos;IBUFDSGTE2&apos; or spirit:decode(id(&apos;MODELPARAM_VALUE.C_BUF_TYPE&apos;)) = &apos;IBUFDSGTE3&apos; or spirit:decode(id(&apos;MODELPARAM_VALUE.C_BUF_TYPE&apos;)) = &apos;IBUFDSGTE4&apos; or spirit:decode(id(&apos;MODELPARAM_VALUE.C_BUF_TYPE&apos;)) = &apos;ICLKDS&apos; or spirit:decode(id(&apos;MODELPARAM_VALUE.C_BUF_TYPE&apos;)) = &apos;ICLKDSGTE&apos;">false</xilinx:isEnabled>
+            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="BUSIF_ENABLEMENT.IBUF_OUT" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_BUF_TYPE&apos;)) = &apos;IBUFDS&apos; or spirit:decode(id(&apos;MODELPARAM_VALUE.C_BUF_TYPE&apos;)) = &apos;IBUFDSGTE2&apos; or spirit:decode(id(&apos;MODELPARAM_VALUE.C_BUF_TYPE&apos;)) = &apos;IBUFDSGTE3&apos; or spirit:decode(id(&apos;MODELPARAM_VALUE.C_BUF_TYPE&apos;)) = &apos;IBUFDSGTE4&apos; or spirit:decode(id(&apos;MODELPARAM_VALUE.C_BUF_TYPE&apos;)) = &apos;ICLKDS&apos; or spirit:decode(id(&apos;MODELPARAM_VALUE.C_BUF_TYPE&apos;)) = &apos;ICLKDSGTE&apos; or spirit:decode(id(&apos;MODELPARAM_VALUE.C_BUF_TYPE&apos;)) = &apos;IBUFDSGTE5&apos;">false</xilinx:isEnabled>
           </xilinx:enablement>
         </xilinx:busInterfaceInfo>
       </spirit:vendorExtensions>
@@ -200,7 +200,7 @@
       <spirit:vendorExtensions>
         <xilinx:busInterfaceInfo>
           <xilinx:enablement>
-            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="BUSIF_ENABLEMENT.IBUF_DS_ODIV2" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_BUF_TYPE&apos;)) = &apos;IBUFDSGTE2&apos; or spirit:decode(id(&apos;MODELPARAM_VALUE.C_BUF_TYPE&apos;)) = &apos;IBUFDSGTE3&apos; or spirit:decode(id(&apos;MODELPARAM_VALUE.C_BUF_TYPE&apos;)) = &apos;IBUFDSGTE4&apos;">false</xilinx:isEnabled>
+            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="BUSIF_ENABLEMENT.IBUF_DS_ODIV2" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_BUF_TYPE&apos;)) = &apos;IBUFDSGTE2&apos; or spirit:decode(id(&apos;MODELPARAM_VALUE.C_BUF_TYPE&apos;)) = &apos;IBUFDSGTE3&apos; or spirit:decode(id(&apos;MODELPARAM_VALUE.C_BUF_TYPE&apos;)) = &apos;IBUFDSGTE4&apos; or spirit:decode(id(&apos;MODELPARAM_VALUE.C_BUF_TYPE&apos;)) = &apos;IBUFDSGTE5&apos;">false</xilinx:isEnabled>
           </xilinx:enablement>
         </xilinx:busInterfaceInfo>
       </spirit:vendorExtensions>
@@ -864,17 +864,18 @@
         <spirit:displayName>VHDL Synthesis</spirit:displayName>
         <spirit:envIdentifier>vhdlSource:vivado.xilinx.com:synthesis</spirit:envIdentifier>
         <spirit:language>vhdl</spirit:language>
+        <spirit:modelName>util_ds_buf</spirit:modelName>
         <spirit:fileSetRef>
           <spirit:localName>xilinx_vhdlsynthesis_view_fileset</spirit:localName>
         </spirit:fileSetRef>
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Mar 23 23:47:44 UTC 2018</spirit:value>
+            <spirit:value>Wed Jul 03 21:20:50 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>7:622fa0c4</spirit:value>
+            <spirit:value>8:87fae2d9</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -883,17 +884,18 @@
         <spirit:displayName>VHDL Synthesis Wrapper</spirit:displayName>
         <spirit:envIdentifier>vhdlSource:vivado.xilinx.com:synthesis.wrapper</spirit:envIdentifier>
         <spirit:language>vhdl</spirit:language>
+        <spirit:modelName>system_util_ds_buf_0_0</spirit:modelName>
         <spirit:fileSetRef>
           <spirit:localName>xilinx_vhdlsynthesiswrapper_view_fileset</spirit:localName>
         </spirit:fileSetRef>
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Mar 23 23:47:44 UTC 2018</spirit:value>
+            <spirit:value>Wed Jul 03 21:20:50 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>7:622fa0c4</spirit:value>
+            <spirit:value>8:87fae2d9</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -902,17 +904,18 @@
         <spirit:displayName>VHDL Simulation</spirit:displayName>
         <spirit:envIdentifier>vhdlSource:vivado.xilinx.com:simulation</spirit:envIdentifier>
         <spirit:language>vhdl</spirit:language>
+        <spirit:modelName>util_ds_buf</spirit:modelName>
         <spirit:fileSetRef>
           <spirit:localName>xilinx_vhdlbehavioralsimulation_view_fileset</spirit:localName>
         </spirit:fileSetRef>
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Mar 23 23:47:44 UTC 2018</spirit:value>
+            <spirit:value>Wed Jul 03 21:20:50 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>7:0c0176d3</spirit:value>
+            <spirit:value>8:64a0200a</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -921,17 +924,18 @@
         <spirit:displayName>VHDL Simulation Wrapper</spirit:displayName>
         <spirit:envIdentifier>vhdlSource:vivado.xilinx.com:simulation.wrapper</spirit:envIdentifier>
         <spirit:language>vhdl</spirit:language>
+        <spirit:modelName>system_util_ds_buf_0_0</spirit:modelName>
         <spirit:fileSetRef>
           <spirit:localName>xilinx_vhdlsimulationwrapper_view_fileset</spirit:localName>
         </spirit:fileSetRef>
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Mar 23 23:47:44 UTC 2018</spirit:value>
+            <spirit:value>Wed Jul 03 21:20:50 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>7:0c0176d3</spirit:value>
+            <spirit:value>8:64a0200a</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -945,11 +949,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Mar 23 23:47:44 UTC 2018</spirit:value>
+            <spirit:value>Wed Jul 03 21:20:50 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>7:622fa0c4</spirit:value>
+            <spirit:value>8:87fae2d9</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -963,11 +967,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Mar 23 23:59:26 UTC 2018</spirit:value>
+            <spirit:value>Wed Jul 03 21:24:31 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>7:622fa0c4</spirit:value>
+            <spirit:value>8:87fae2d9</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -995,7 +999,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.IBUF_DS_P" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_BUF_TYPE&apos;)) = &apos;IBUFDS&apos; or spirit:decode(id(&apos;MODELPARAM_VALUE.C_BUF_TYPE&apos;)) = &apos;IBUFDSGTE2&apos; or spirit:decode(id(&apos;MODELPARAM_VALUE.C_BUF_TYPE&apos;)) = &apos;IBUFDSGTE3&apos; or spirit:decode(id(&apos;MODELPARAM_VALUE.C_BUF_TYPE&apos;)) = &apos;IBUFDSGTE4&apos;">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.IBUF_DS_P" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_BUF_TYPE&apos;)) = &apos;IBUFDS&apos; or spirit:decode(id(&apos;MODELPARAM_VALUE.C_BUF_TYPE&apos;)) = &apos;IBUFDSGTE2&apos; or spirit:decode(id(&apos;MODELPARAM_VALUE.C_BUF_TYPE&apos;)) = &apos;IBUFDSGTE3&apos; or spirit:decode(id(&apos;MODELPARAM_VALUE.C_BUF_TYPE&apos;)) = &apos;IBUFDSGTE4&apos; or spirit:decode(id(&apos;MODELPARAM_VALUE.C_BUF_TYPE&apos;)) = &apos;IBUFDSGTE5&apos;">false</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -1022,7 +1026,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.IBUF_DS_N" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_BUF_TYPE&apos;)) = &apos;IBUFDS&apos; or spirit:decode(id(&apos;MODELPARAM_VALUE.C_BUF_TYPE&apos;)) = &apos;IBUFDSGTE2&apos; or spirit:decode(id(&apos;MODELPARAM_VALUE.C_BUF_TYPE&apos;)) = &apos;IBUFDSGTE3&apos; or spirit:decode(id(&apos;MODELPARAM_VALUE.C_BUF_TYPE&apos;)) = &apos;IBUFDSGTE4&apos;">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.IBUF_DS_N" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_BUF_TYPE&apos;)) = &apos;IBUFDS&apos; or spirit:decode(id(&apos;MODELPARAM_VALUE.C_BUF_TYPE&apos;)) = &apos;IBUFDSGTE2&apos; or spirit:decode(id(&apos;MODELPARAM_VALUE.C_BUF_TYPE&apos;)) = &apos;IBUFDSGTE3&apos; or spirit:decode(id(&apos;MODELPARAM_VALUE.C_BUF_TYPE&apos;)) = &apos;IBUFDSGTE4&apos; or spirit:decode(id(&apos;MODELPARAM_VALUE.C_BUF_TYPE&apos;)) = &apos;IBUFDSGTE5&apos;">false</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -1042,11 +1046,14 @@
               <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
             </spirit:wireTypeDef>
           </spirit:wireTypeDefs>
+          <spirit:driver>
+            <spirit:defaultValue spirit:format="long">0</spirit:defaultValue>
+          </spirit:driver>
         </spirit:wire>
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.IBUF_OUT" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_BUF_TYPE&apos;)) = &apos;IBUFDS&apos; or spirit:decode(id(&apos;MODELPARAM_VALUE.C_BUF_TYPE&apos;)) = &apos;IBUFDSGTE2&apos; or spirit:decode(id(&apos;MODELPARAM_VALUE.C_BUF_TYPE&apos;)) = &apos;IBUFDSGTE3&apos; or spirit:decode(id(&apos;MODELPARAM_VALUE.C_BUF_TYPE&apos;)) = &apos;IBUFDSGTE4&apos; or spirit:decode(id(&apos;MODELPARAM_VALUE.C_BUF_TYPE&apos;)) = &apos;ICLKDS&apos; or spirit:decode(id(&apos;MODELPARAM_VALUE.C_BUF_TYPE&apos;)) = &apos;ICLKDSGTE&apos;">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.IBUF_OUT" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_BUF_TYPE&apos;)) = &apos;IBUFDS&apos; or spirit:decode(id(&apos;MODELPARAM_VALUE.C_BUF_TYPE&apos;)) = &apos;IBUFDSGTE2&apos; or spirit:decode(id(&apos;MODELPARAM_VALUE.C_BUF_TYPE&apos;)) = &apos;IBUFDSGTE3&apos; or spirit:decode(id(&apos;MODELPARAM_VALUE.C_BUF_TYPE&apos;)) = &apos;IBUFDSGTE4&apos; or spirit:decode(id(&apos;MODELPARAM_VALUE.C_BUF_TYPE&apos;)) = &apos;ICLKDS&apos; or spirit:decode(id(&apos;MODELPARAM_VALUE.C_BUF_TYPE&apos;)) = &apos;ICLKDSGTE&apos; or spirit:decode(id(&apos;MODELPARAM_VALUE.C_BUF_TYPE&apos;)) = &apos;IBUFDSGTE5&apos;">false</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -1070,7 +1077,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.IBUF_DS_ODIV2" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_BUF_TYPE&apos;)) = &apos;IBUFDSGTE2&apos; or spirit:decode(id(&apos;MODELPARAM_VALUE.C_BUF_TYPE&apos;)) = &apos;IBUFDSGTE3&apos; or spirit:decode(id(&apos;MODELPARAM_VALUE.C_BUF_TYPE&apos;)) = &apos;IBUFDSGTE4&apos;">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.IBUF_DS_ODIV2" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_BUF_TYPE&apos;)) = &apos;IBUFDSGTE2&apos; or spirit:decode(id(&apos;MODELPARAM_VALUE.C_BUF_TYPE&apos;)) = &apos;IBUFDSGTE3&apos; or spirit:decode(id(&apos;MODELPARAM_VALUE.C_BUF_TYPE&apos;)) = &apos;IBUFDSGTE4&apos; or spirit:decode(id(&apos;MODELPARAM_VALUE.C_BUF_TYPE&apos;)) = &apos;IBUFDSGTE5&apos;">false</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -1220,7 +1227,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.IOBUF_IO_T" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_BUF_TYPE&apos;)) = &apos;IOBUFDS&apos;">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.IOBUF_IO_T" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_BUF_TYPE&apos;)) = &apos;IOBUFDS&apos; or spirit:decode(id(&apos;MODELPARAM_VALUE.C_BUF_TYPE&apos;)) = &apos;IOBUF&apos;">false</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -1247,7 +1254,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.IOBUF_IO_I" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_BUF_TYPE&apos;)) = &apos;IOBUFDS&apos;">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.IOBUF_IO_I" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_BUF_TYPE&apos;)) = &apos;IOBUFDS&apos; or spirit:decode(id(&apos;MODELPARAM_VALUE.C_BUF_TYPE&apos;)) = &apos;IOBUF&apos;">false</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -1267,11 +1274,41 @@
               <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
             </spirit:wireTypeDef>
           </spirit:wireTypeDefs>
+          <spirit:driver>
+            <spirit:defaultValue spirit:format="long">0</spirit:defaultValue>
+          </spirit:driver>
         </spirit:wire>
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.IOBUF_IO_O" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_BUF_TYPE&apos;)) = &apos;IOBUFDS&apos;">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.IOBUF_IO_O" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_BUF_TYPE&apos;)) = &apos;IOBUFDS&apos; or spirit:decode(id(&apos;MODELPARAM_VALUE.C_BUF_TYPE&apos;)) = &apos;IOBUF&apos;">false</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:portInfo>
+        </spirit:vendorExtensions>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>IOBUF_IO_IO</spirit:name>
+        <spirit:wire>
+          <spirit:direction>inout</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_SIZE&apos;)) - 1)">0</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+          <spirit:driver>
+            <spirit:defaultValue spirit:format="long">0</spirit:defaultValue>
+          </spirit:driver>
+        </spirit:wire>
+        <spirit:vendorExtensions>
+          <xilinx:portInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.IOBUF_IO_IO" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_BUF_TYPE&apos;)) = &apos;IOBUF&apos;">false</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -1755,9 +1792,8 @@
     <spirit:fileSet>
       <spirit:name>xilinx_vhdlsynthesis_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../ipshared/e2ff/hdl/vhdl/util_ds_buf.vhd</spirit:name>
+        <spirit:name>util_ds_buf.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>util_ds_buf_v2_01_a</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>system_util_ds_buf_0_0_ooc.xdc</spirit:name>
@@ -1778,10 +1814,8 @@
     <spirit:fileSet>
       <spirit:name>xilinx_vhdlbehavioralsimulation_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../ipshared/e2ff/hdl/vhdl/util_ds_buf.vhd</spirit:name>
+        <spirit:name>util_ds_buf.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>util_ds_buf_v2_01_a</spirit:logicalName>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -1874,7 +1908,7 @@
   <spirit:vendorExtensions>
     <xilinx:coreExtensions>
       <xilinx:displayName>Utility Buffer</xilinx:displayName>
-      <xilinx:coreRevision>7</xilinx:coreRevision>
+      <xilinx:coreRevision>10</xilinx:coreRevision>
       <xilinx:configElementInfos>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.BUFG_I.CLK_DOMAIN" xilinx:valueSource="propagated" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.BUFG_I.FREQ_HZ" xilinx:valueSource="propagated" xilinx:valuePermission="bd"/>
@@ -1886,10 +1920,10 @@
       </xilinx:configElementInfos>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
-      <xilinx:xilinxVersion>2018.1.0</xilinx:xilinxVersion>
-      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="b6f437c0"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="8b0adace"/>
-      <xilinx:checksum xilinx:scope="ports" xilinx:value="50332cff"/>
+      <xilinx:xilinxVersion>2018.2</xilinx:xilinxVersion>
+      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="fa7fd303"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="0c8930d2"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="4e584e07"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="84c7b6cd"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="b2b2d5ab"/>
     </xilinx:packagingInfo>
