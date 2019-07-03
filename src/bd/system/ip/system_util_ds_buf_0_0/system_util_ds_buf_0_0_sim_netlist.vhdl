@@ -1,10 +1,10 @@
--- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+-- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
--- Tool Version: Vivado v.2017.4 (lin64) Build 2086221 Fri Dec 15 20:54:30 MST 2017
--- Date        : Fri Mar 23 16:59:25 2018
--- Host        : ubuntu running 64-bit Ubuntu 16.04.3 LTS
+-- Tool Version: Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+-- Date        : Wed Jul  3 16:24:31 2019
+-- Host        : ashton-desktop running 64-bit Ubuntu 16.04.6 LTS
 -- Command     : write_vhdl -force -mode funcsim
---               /home/digilent/work/git/Zybo-base-linux/src/bd/system/ip/system_util_ds_buf_0_0/system_util_ds_buf_0_0_sim_netlist.vhdl
+--               /home/ashton/repo/Zybo-base-linux/src/bd/system/ip/system_util_ds_buf_0_0/system_util_ds_buf_0_0_sim_netlist.vhdl
 -- Design      : system_util_ds_buf_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -28,6 +28,7 @@ entity system_util_ds_buf_0_0_util_ds_buf is
     IOBUF_IO_T : in STD_LOGIC_VECTOR ( 0 to 0 );
     IOBUF_IO_I : in STD_LOGIC_VECTOR ( 0 to 0 );
     IOBUF_IO_O : out STD_LOGIC_VECTOR ( 0 to 0 );
+    IOBUF_IO_IO : inout STD_LOGIC_VECTOR ( 0 to 0 );
     BUFG_I : in STD_LOGIC_VECTOR ( 0 to 0 );
     BUFG_O : out STD_LOGIC_VECTOR ( 0 to 0 );
     BUFGCE_I : in STD_LOGIC_VECTOR ( 0 to 0 );
@@ -94,7 +95,7 @@ entity system_util_ds_buf_0_0 is
   attribute downgradeipidentifiedwarnings : string;
   attribute downgradeipidentifiedwarnings of system_util_ds_buf_0_0 : entity is "yes";
   attribute x_core_info : string;
-  attribute x_core_info of system_util_ds_buf_0_0 : entity is "util_ds_buf,Vivado 2017.4";
+  attribute x_core_info of system_util_ds_buf_0_0 : entity is "util_ds_buf,Vivado 2018.2";
 end system_util_ds_buf_0_0;
 
 architecture STRUCTURE of system_util_ds_buf_0_0 is
@@ -106,6 +107,7 @@ architecture STRUCTURE of system_util_ds_buf_0_0 is
   signal NLW_U0_IBUF_OUT_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
   signal NLW_U0_IOBUF_DS_N_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
   signal NLW_U0_IOBUF_DS_P_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal NLW_U0_IOBUF_IO_IO_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
   signal NLW_U0_IOBUF_IO_O_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
   signal NLW_U0_OBUF_DS_N_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
   signal NLW_U0_OBUF_DS_P_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
@@ -146,6 +148,7 @@ U0: entity work.system_util_ds_buf_0_0_util_ds_buf
       IOBUF_DS_N(0) => NLW_U0_IOBUF_DS_N_UNCONNECTED(0),
       IOBUF_DS_P(0) => NLW_U0_IOBUF_DS_P_UNCONNECTED(0),
       IOBUF_IO_I(0) => '0',
+      IOBUF_IO_IO(0) => NLW_U0_IOBUF_IO_IO_UNCONNECTED(0),
       IOBUF_IO_O(0) => NLW_U0_IOBUF_IO_O_UNCONNECTED(0),
       IOBUF_IO_T(0) => '0',
       OBUF_DS_N(0) => NLW_U0_OBUF_DS_N_UNCONNECTED(0),

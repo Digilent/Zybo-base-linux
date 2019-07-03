@@ -1,10 +1,10 @@
-// Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+// Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
-// Tool Version: Vivado v.2017.4 (lin64) Build 2086221 Fri Dec 15 20:54:30 MST 2017
-// Date        : Fri Mar 23 16:59:25 2018
-// Host        : ubuntu running 64-bit Ubuntu 16.04.3 LTS
+// Tool Version: Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+// Date        : Wed Jul  3 16:24:31 2019
+// Host        : ashton-desktop running 64-bit Ubuntu 16.04.6 LTS
 // Command     : write_verilog -force -mode funcsim
-//               /home/digilent/work/git/Zybo-base-linux/src/bd/system/ip/system_util_ds_buf_0_0/system_util_ds_buf_0_0_sim_netlist.v
+//               /home/ashton/repo/Zybo-base-linux/src/bd/system/ip/system_util_ds_buf_0_0/system_util_ds_buf_0_0_sim_netlist.v
 // Design      : system_util_ds_buf_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -12,7 +12,7 @@
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CHECK_LICENSE_TYPE = "system_util_ds_buf_0_0,util_ds_buf,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* x_core_info = "util_ds_buf,Vivado 2017.4" *) 
+(* CHECK_LICENSE_TYPE = "system_util_ds_buf_0_0,util_ds_buf,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* x_core_info = "util_ds_buf,Vivado 2018.2" *) 
 (* NotValidForBitStream *)
 module system_util_ds_buf_0_0
    (BUFG_I,
@@ -30,6 +30,7 @@ module system_util_ds_buf_0_0
   wire [0:0]NLW_U0_IBUF_OUT_UNCONNECTED;
   wire [0:0]NLW_U0_IOBUF_DS_N_UNCONNECTED;
   wire [0:0]NLW_U0_IOBUF_DS_P_UNCONNECTED;
+  wire [0:0]NLW_U0_IOBUF_IO_IO_UNCONNECTED;
   wire [0:0]NLW_U0_IOBUF_IO_O_UNCONNECTED;
   wire [0:0]NLW_U0_OBUF_DS_N_UNCONNECTED;
   wire [0:0]NLW_U0_OBUF_DS_P_UNCONNECTED;
@@ -61,6 +62,7 @@ module system_util_ds_buf_0_0
         .IOBUF_DS_N(NLW_U0_IOBUF_DS_N_UNCONNECTED[0]),
         .IOBUF_DS_P(NLW_U0_IOBUF_DS_P_UNCONNECTED[0]),
         .IOBUF_IO_I(1'b0),
+        .IOBUF_IO_IO(NLW_U0_IOBUF_IO_IO_UNCONNECTED[0]),
         .IOBUF_IO_O(NLW_U0_IOBUF_IO_O_UNCONNECTED[0]),
         .IOBUF_IO_T(1'b0),
         .OBUF_DS_N(NLW_U0_OBUF_DS_N_UNCONNECTED[0]),
@@ -82,6 +84,7 @@ module system_util_ds_buf_0_0_util_ds_buf
     IOBUF_IO_T,
     IOBUF_IO_I,
     IOBUF_IO_O,
+    IOBUF_IO_IO,
     BUFG_I,
     BUFG_O,
     BUFGCE_I,
@@ -111,6 +114,7 @@ module system_util_ds_buf_0_0_util_ds_buf
   input [0:0]IOBUF_IO_T;
   input [0:0]IOBUF_IO_I;
   output [0:0]IOBUF_IO_O;
+  inout [0:0]IOBUF_IO_IO;
   input [0:0]BUFG_I;
   output [0:0]BUFG_O;
   input [0:0]BUFGCE_I;

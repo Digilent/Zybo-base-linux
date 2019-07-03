@@ -20,7 +20,7 @@ set script_folder [_tcl::get_script_folder]
 ################################################################
 # Check if script is running in correct Vivado version.
 ################################################################
-set scripts_vivado_version 2017.4
+set scripts_vivado_version 2018.2
 set current_vivado_version [version -short]
 
 if { [string first $scripts_vivado_version $current_vivado_version] == -1 } {
@@ -186,13 +186,6 @@ proc create_root_design { parentCell } {
   # Create instance: axi_dynclk_0, and set properties
   set axi_dynclk_0 [ create_bd_cell -type ip -vlnv digilentinc.com:ip:axi_dynclk:1.0 axi_dynclk_0 ]
 
-  set_property -dict [ list \
-   CONFIG.SUPPORTS_NARROW_BURST {0} \
-   CONFIG.NUM_READ_OUTSTANDING {1} \
-   CONFIG.NUM_WRITE_OUTSTANDING {1} \
-   CONFIG.MAX_BURST_LENGTH {1} \
- ] [get_bd_intf_pins /axi_dynclk_0/s00_axi]
-
   # Create instance: axi_gpio_hdmi, and set properties
   set axi_gpio_hdmi [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_hdmi ]
   set_property -dict [ list \
@@ -231,35 +224,6 @@ proc create_root_design { parentCell } {
    CONFIG.C_DMA_TYPE {1} \
    CONFIG.C_S_AXI_ADDR_WIDTH {6} \
  ] $axi_i2s_adi_0
-
-  set_property -dict [ list \
-   CONFIG.TUSER_WIDTH {2} \
-   CONFIG.HAS_TREADY {1} \
- ] [get_bd_intf_pins /axi_i2s_adi_0/DMA_ACK_RX]
-
-  set_property -dict [ list \
-   CONFIG.TUSER_WIDTH {2} \
-   CONFIG.HAS_TREADY {1} \
- ] [get_bd_intf_pins /axi_i2s_adi_0/DMA_ACK_TX]
-
-  set_property -dict [ list \
-   CONFIG.TUSER_WIDTH {2} \
-   CONFIG.HAS_TREADY {1} \
-   CONFIG.HAS_TLAST {1} \
- ] [get_bd_intf_pins /axi_i2s_adi_0/DMA_REQ_RX]
-
-  set_property -dict [ list \
-   CONFIG.TUSER_WIDTH {2} \
-   CONFIG.HAS_TREADY {1} \
-   CONFIG.HAS_TLAST {1} \
- ] [get_bd_intf_pins /axi_i2s_adi_0/DMA_REQ_TX]
-
-  set_property -dict [ list \
-   CONFIG.SUPPORTS_NARROW_BURST {0} \
-   CONFIG.NUM_READ_OUTSTANDING {1} \
-   CONFIG.NUM_WRITE_OUTSTANDING {1} \
-   CONFIG.MAX_BURST_LENGTH {1} \
- ] [get_bd_intf_pins /axi_i2s_adi_0/S_AXI]
 
   # Create instance: axi_mem_intercon, and set properties
   set axi_mem_intercon [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_interconnect:2.1 axi_mem_intercon ]
@@ -307,7 +271,7 @@ proc create_root_design { parentCell } {
  ] $axis_subset_converter_0
 
   # Create instance: clk_wiz_0, and set properties
-  set clk_wiz_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:5.4 clk_wiz_0 ]
+  set clk_wiz_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:6.0 clk_wiz_0 ]
   set_property -dict [ list \
    CONFIG.CLKIN1_JITTER_PS {80.0} \
    CONFIG.CLKOUT1_JITTER {473.813} \
@@ -1205,13 +1169,6 @@ proc create_root_design { parentCell } {
    CONFIG.VCCINT_ALARM {false} \
    CONFIG.XADC_STARUP_SELECTION {channel_sequencer} \
  ] $xadc_wiz_0
-
-  set_property -dict [ list \
-   CONFIG.SUPPORTS_NARROW_BURST {0} \
-   CONFIG.NUM_READ_OUTSTANDING {1} \
-   CONFIG.NUM_WRITE_OUTSTANDING {1} \
-   CONFIG.MAX_BURST_LENGTH {1} \
- ] [get_bd_intf_pins /xadc_wiz_0/s_axi_lite]
 
   # Create instance: xlconcat_0, and set properties
   set xlconcat_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconcat:2.1 xlconcat_0 ]
